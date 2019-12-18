@@ -1,0 +1,131 @@
+body{
+    background: #173f5f;
+    font-family: 'Montserrat', sans-serif;
+}
+
+h1 {
+  color: #fff;
+  font-size: 50px;
+  letter-spacing: 1px;
+  margin-top: 90px;
+  text-align: center;
+}
+
+.content {
+  color:  #FFA500;
+  background: #fff;
+  max-width: 950px;
+  margin: 30px auto;
+  padding: 30px 10px;
+  border-radius: 15px;
+  box-shadow: 10px 10px 8px #888888;
+}
+
+
+ul{
+    list-style-type: none;
+    padding: 0;
+    cursor: default;
+}
+
+li{
+    padding: 20px 20px;
+    background: #f6f6f6;
+    font-size: 18px;
+    color: #555;
+    position: relative;
+    border-bottom: 1px solid #e6e6e6;
+    height: 80px;
+    display: grid;
+    grid-template-columns: 55% 25% 15% 5%;
+}
+
+li:nth-child(even){
+    padding: 50px 20px;
+    background: #f2f2f2;
+}
+
+li span{
+    display: block;
+}
+
+li span:nth-child(4){
+    font-size: 12px;
+    margin-top: 6px;
+    background: #fff#173f5f;
+    border-radius: 15px;
+}
+
+li span:nth-child(5){
+    font-size: 12px;
+    margin-top: 6px;
+    color: #999;
+}
+
+li span:nth-child(3){
+    font-size: 16px;
+    display: inline;
+}
+
+li div{
+    position: absolute;
+    top: 0;
+    right: 0px;
+    background: rgba(255,255,255,0.6);
+    width: 40px;
+    text-align: center;
+    padding: 10px 0;
+    font-weight:  bold;
+    cursor:  pointer;
+}
+
+nav ul{
+    height:500px; 
+    width:98%;
+}
+
+nav ul{
+    overflow:hidden; 
+    overflow-y:scroll;
+}
+
+form input{
+    float: left;
+    width: 80%;
+    margin: 0;
+    border: 0;
+    border-bottom: 1px solid #eee;
+    margin: 0 1%; 
+    padding: 10px;
+    display: block;
+    box-sizing: border-box;
+    font-size: 18px;
+}
+
+form input:focus{
+    outline: none;
+    border-bottom: 3px solid #88236f;
+    padding-bottom: 8px;
+    transition: all ease 0.2s;
+}
+
+form:after{
+    content: '';
+    clear: both;
+    display: block;
+}
+
+button{
+    border: 0;
+    background: #fff;
+    border-radius: 10px;
+    padding: 13px;
+    width: 14%;
+    box-shadow: -1px 0px 1px rgba(0,0,0,0.1);
+    font-weight: bold;
+    font-family: 'Montserrat', sans-serif;
+    letter-spacing: 1px;
+    color: #999;
+}
+
+

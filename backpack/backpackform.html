@@ -1,0 +1,38 @@
+<html>
+  <head>
+    <script src="https://www.gstatic.com/firebasejs/7.6.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.6.0/firebase-firestore.js"></script>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap"
+    rel="stylesheet">
+  </head>
+  <body>
+    <h1>Backpacking Gear Entry Form</h1>
+    <div class = "content">
+      <form id="add-gear-form">
+        <input type="text" name="brand" placeholder="Gear brand">
+        <input type="text" name="category" placeholder="Gear category">
+        <input type="text" name="description" placeholder="Gear description">
+        <input type="text" name="item_name" placeholder="Gear item name">
+        <input type="number" name="weight" placeholder="Weight">
+        <input type="text" name="weight_units" placeholder="Weight units">
+        <button>Add Gear</button>
+      </form>
+      <nav>
+        <ul id="gear-list"></ul>
+      </nav>
+    </div>
+
+    <script>
+      // web app's Firebase configuration
+      var firebaseConfig = {
+        // ** insert api info here **
+      };
+      // Initialize Firebase
+      firebase.initializeApp(firebaseConfig);
+      const db = firebase.firestore();
+    </script>
+    <script src="backpackapp.js"></script>
+
+  </body>
+</html>
